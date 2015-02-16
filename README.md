@@ -1,11 +1,11 @@
-#Catberry Jade Adapter
+# Catberry Jade Adapter
 
 [![NPM](https://nodei.co/npm/catberry-jade.png)](https://nodei.co/npm/catberry-jade/)
 
 It is an adapter for [Jade](http://jade-lang.com/) template engine
 that makes possible to use it from [Catberry](https://github.com/catberry/catberry) application.
 
-##Usage
+## Usage
 You can use the adapter like this in ./browser.js or ./server.js.
 Actually, [Catberry CLI](https://github.com/catberry/catberry-cli) does it for you.
 
@@ -15,7 +15,7 @@ var jade = require('catberry-jade'),
 jade.register(cat.locator);
 ```
 
-##Contribution
+## Contribution
 If you have found a bug, please create pull request with [mocha](https://www.npmjs.org/package/mocha) 
 unit-test which reproduces it or describe all details in an issue if you can not
 implement test. If you want to propose some improvements just create an issue or
