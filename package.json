@@ -17,7 +17,6 @@
 		}
 	],
 	"homepage": "http://jade-lang.com/",
-	"contributors": [],
 	"main": "./index.js",
 	"browser": {
 		"jade": "./node_modules/jade/runtime.js",
@@ -33,6 +32,9 @@
 		"catberry",
 		"views"
 	],
+	"peerDependencies": {
+		"catberry": "^4.0.0"
+	},
 	"dependencies": {
 		"jade": "^1.9.2"
 	},
