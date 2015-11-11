@@ -59,8 +59,8 @@ TemplateProvider.prototype._templates = null;
 /**
  * Registers compiled (precompiled) Jade template.
  * http://jadejs.com/reference.html
- * @param {String} name Template name.
- * @param {String} compiled Compiled template source.
+ * @param {string} name Template name.
+ * @param {string} compiled Compiled template source.
  */
 TemplateProvider.prototype.registerCompiled = function (name, compiled) {
 	// jshint evil:true
@@ -70,9 +70,9 @@ TemplateProvider.prototype.registerCompiled = function (name, compiled) {
 
 /**
  * Renders template with specified data.
- * @param {String} name Name of template.
+ * @param {string} name Name of template.
  * @param {Object} data Data context for template.
- * @returns {*}
+ * @returns {Promise<string>} Promise for rendered HTML.
  */
 TemplateProvider.prototype.render = function (name, data) {
 	if (!(name in this._templates)) {
@@ -82,7 +82,7 @@ TemplateProvider.prototype.render = function (name, data) {
 	var promise;
 	try {
 		promise = Promise.resolve(this._templates[name](data));
-	} catch(e) {
+	} catch (e) {
 		promise = Promise.reject(e);
 	}
 	return promise;
