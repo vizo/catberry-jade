@@ -1,7 +1,7 @@
 {
 	"name": "catberry-jade",
 	"description": "Catberry adapter for Jade template engine",
-	"version": "1.1.6",
+	"version": "1.1.7",
 	"author": {
 		"name": "Denis Rechkunov",
 		"email": "denis.rechkunov@gmail.com"
