@@ -1,5 +1,7 @@
 # Catberry Jade Adapter
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/catberry/main?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
 It is an adapter for [Jade](http://jade-lang.com/) template engine
 that makes possible to use it from [Catberry](https://github.com/catberry/catberry) application.
 
