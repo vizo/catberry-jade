@@ -1,26 +1,33 @@
 # Catberry Jade Adapter
 
-[![NPM](https://nodei.co/npm/catberry-jade.png)](https://nodei.co/npm/catberry-jade/)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/catberry/main?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
 It is an adapter for [Jade](http://jade-lang.com/) template engine
 that makes possible to use it from [Catberry](https://github.com/catberry/catberry) application.
 
+## Installation
+
+```bash
+npm install catberry-handlebars --save
+```
+
 ## Usage
-You can use the adapter like this in ./browser.js or ./server.js.
-Actually, [Catberry CLI](https://github.com/catberry/catberry-cli) does it for you.
+You can use the adapter in ./browser.js, ./server.js or ./build.js as following:
 
 ```javascript
-var jade = require('catberry-jade'),
-	cat = catberry.create(config);
+const jade = require('catberry-jade');
+const cat = catberry.create(config);
 jade.register(cat.locator);
 ```
+
+In fact, [Catberry CLI](https://github.com/catberry/catberry-cli) does it for you.
 
 ## Contributing
 
 There are a lot of ways to contribute:
 
 * Give it a star
-* Join the [Gitter](https://gitter.im/catberry/catberry) room and leave a feedback or help with answering users' questions
+* Join the [Gitter](https://gitter.im/catberry/main) room and leave a feedback or help with answering users' questions
 * [Submit a bug or a feature request](https://github.com/catberry/catberry-jade/issues)
 * [Submit a PR](https://github.com/catberry/catberry-jade/blob/develop/CONTRIBUTING.md)
 
