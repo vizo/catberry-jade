@@ -23,7 +23,7 @@
 	"homepage": "http://jade-lang.com/",
 	"main": "./index.js",
 	"browser": {
-		"jade": "./node_modules/jade/runtime.js",
+		"./lib/jade.js": "./browser/jade.js",
 		"./lib/TemplateProvider.js": "./browser/TemplateProvider.js"
 	},
 	"repository": {
