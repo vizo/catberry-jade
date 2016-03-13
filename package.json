@@ -39,6 +39,9 @@
 	"dependencies": {
 		"jade": "^1.11.0"
 	},
+	"peerDependencies": {
+		"catberry": "^8.0.0"
+	},
 	"devDependencies": {
 		"eslint": "^2.0.0"
 	},
