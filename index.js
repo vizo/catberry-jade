@@ -1,6 +1,6 @@
 'use strict';
 
-const Jade = require('jade');
+const Jade = require('./lib/jade.js');
 const TemplateProvider = require('./lib/TemplateProvider');
 
 module.exports = {
