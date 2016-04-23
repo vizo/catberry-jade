@@ -8,7 +8,7 @@ that makes possible to use it from [Catberry](https://github.com/catberry/catber
 ## Installation
 
 ```bash
-npm install catberry-handlebars --save
+npm install catberry-jade --save
 ```
 
 ## Usage
