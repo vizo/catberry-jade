@@ -17,12 +17,21 @@ class TemplateProvider {
 		 */
 		this._jade = locator.resolve('jade');
 
+		this._merge = this._jade.merge;
+
 		/**
 		 * Config for Jade
 		 *
 		 * @private
 		 */
 		this._jadeOptions = config.jadeOptions || {};
+
+		/**
+		 * Template provider globals
+		 *
+		 * @public
+		 */
+		this.globals = config.template && config.template.globals ? config.template.globals : {};
 
 		/**
 		 * Current set of registered templates.
@@ -55,10 +64,9 @@ class TemplateProvider {
 		if (!(name in this._templates)) {
 			return Promise.reject(new Error(`"${name}" not found among registered templates`));
 		}
-
 		let promise;
 		try {
-			promise = Promise.resolve(this._templates[name](data));
+			promise = Promise.resolve(this._templates[name](this._merge(this._merge({}, this.globals), data || {})));
 		} catch (e) {
 			promise = Promise.reject(e);
 		}
