@@ -17,7 +17,6 @@ class TemplateProvider {
 		 */
 		this._jade = locator.resolve('jade');
 
-
 		this._merge = this._jade.merge;
 
 		/**
