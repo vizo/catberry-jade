@@ -31,7 +31,7 @@ class TemplateProvider {
 		 *
 		 * @public
 		 */
-		this.globals = config.templateProvider && config.templateProvider.globals ? config.templateProvider.globals : {};
+		this.globals = config.template && config.template.globals ? config.template.globals : {};
 
 		/**
 		 * Current set of registered templates.
