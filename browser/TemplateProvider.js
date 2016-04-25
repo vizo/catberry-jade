@@ -28,11 +28,11 @@ class TemplateProvider {
 		this._jadeOptions = config.jadeOptions || {};
 
 		/**
-		 * Template globals
+		 * Template provider globals
 		 *
 		 * @public
 		 */
-		this.globals = config.template && config.template.globals ? config.template.globals : {};
+		this.globals = config.templateProvider && config.templateProvider.globals ? config.templateProvider.globals : {};
 
 		/**
 		 * Current set of registered templates.
