@@ -66,7 +66,9 @@ class TemplateProvider {
 		}
 		let promise;
 		try {
-			promise = Promise.resolve(this._templates[name](this._merge(this._merge({}, this.globals), data || {})));
+			/* Skip merge if globals doesn't exist */
+			let mergedData = this.globals ? this._merge(this._merge({}, this.globals), data || {}) : data;
+			promise = Promise.resolve(this._templates[name](mergedData));
 		} catch (e) {
 			promise = Promise.reject(e);
 		}
