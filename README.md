@@ -29,7 +29,7 @@ You can add global variables to Catberry application's [`config`](https://github
 {
 	template: {
 		globals: {
-      globalVariableKey: 'globalVariableValue'
+			globalVariableKey: 'globalVariableValue'
 		},
 		someOtherParameter: 'someOtherValue'
 	},
